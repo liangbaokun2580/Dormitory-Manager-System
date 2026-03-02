@@ -1,0 +1,92 @@
+:root {
+  /* 默认浅色主题 */
+  --color-bg: #f4f4f5;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-primary: #4f46e5;
+  --color-primary-light: #6366f1;
+  --color-accent: #06b6d4;
+  --color-text: #0f172a;
+  --color-text-muted: #6b7280;
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-danger: #dc2626;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  --transition: 0.2s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f0f14;
+    --color-surface: #16161e;
+    --color-surface-elevated: #1e1e28;
+    --color-border: #2a2a36;
+    --color-primary: #7c3aed;
+    --color-primary-light: #a78bfa;
+    --color-accent: #22d3ee;
+    --color-text: #cdd6f4;
+    --color-text-muted: #a6adc8;
+    --color-success: #34d399;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    --transition: 0.2s ease;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

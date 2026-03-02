@@ -1,0 +1,7 @@
+export { default as IconDashboard } from './IconDashboard.vue'
+export { default as IconUsers } from './IconUsers.vue'
+export { default as IconBuilding } from './IconBuilding.vue'
+export { default as IconDoor } from './IconDoor.vue'
+export { default as IconUserPlus } from './IconUserPlus.vue'
+export { default as IconChart } from './IconChart.vue'
+export { default as IconTool } from './IconTool.vue'
